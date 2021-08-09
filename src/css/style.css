@@ -1,0 +1,30 @@
+.primary {
+  background: #4545a5;
+}
+
+.header {
+  margin: 0;
+  height: 72px;
+  width: 100%;
+  border-radius: 1rem 0 0 0;
+}
+
+.gray-bg {
+  background-color: #efefef;
+}
+
+.border-right {
+  border-right: 1px solid #efefef;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.gray-bg {
+  background: #efefef;
+}
+
+.white-bg {
+  background: white;
+}

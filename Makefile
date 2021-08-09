@@ -6,4 +6,4 @@ sass:
 	npx stylelint --fix ./app/css/style.css
 
 pug:
-	pug ./app/pug/* --pretty -o -w ./build/
+	pug -w ./app/pug/* --pretty -o ./build/
