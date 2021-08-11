@@ -7,10 +7,25 @@
   height: 72px;
   width: 100%;
   border-radius: 1rem 0 0 0;
+  font-size: 12.8px;
+  padding: 24px;
 }
 
 .gray-bg {
   background-color: #efefef;
+}
+
+@media only screen and (max-width: 1600px) {
+  .xxl {
+    max-width: 1600px;
+    width: 1540px;
+    margin: 0 auto;
+  }
+}
+
+body {
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .border-right {
@@ -27,4 +42,23 @@
 
 .white-bg {
   background: white;
+}
+
+.light {
+  color: #fbfbfb;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pt-3rem {
+  padding-top: 3rem;
+}
+
+.py-1rem {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

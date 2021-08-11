@@ -7,8 +7,23 @@
   height: 72px;
   width: 100%;
   border-radius: 1rem 0 0 0;
+  font-size: 12.8px;
+  padding: 24px;
 }
 
 .gray-bg {
   background-color: $gray;
+}
+
+@media only screen and (max-width: 1600px) {
+  .xxl {
+    max-width: 1600px;
+    width: 1540px;
+    margin: 0 auto;
+  }
+}
+
+body {
+  margin: 0 auto;
+  overflow: hidden;
 }
