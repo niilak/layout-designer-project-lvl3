@@ -1,0 +1,15 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  @include hide-scrollbar;
+}
+
+li {
+  list-style-type: none;
+}
+
+li img {
+  width: 50px;
+  height: 50px;
+  border: 50%;
+}
