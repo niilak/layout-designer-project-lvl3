@@ -33,6 +33,18 @@
   padding-right: 1rem;
 }
 
+.pl-1-5rem {
+  padding-left: 1.5rem;
+}
+
+.pb-1rem {
+  padding-bottom: 1rem;
+}
+
+.text-responsive-80 {
+  font-size: calc(80% + 1vw + 1vh);
+}
+
 .primary {
   background: #4545a5;
 }
@@ -88,12 +100,48 @@ body {
   display: none;
 }
 
-li {
+.contact-li {
   list-style-type: none;
 }
 
-li img {
+.avatar {
   width: 50px;
   height: 50px;
-  border: 50%;
+  border-radius: 50%;
+}
+
+.contact-name {
+  font-weight: bold;
+  color: black;
+}
+
+.contact-status {
+  color: #6c757d;
+  font-weight: normal;
+  font-size: 12.8px;
+}
+
+h6 {
+  border-top: 1px solid #efefef;
+}
+
+.search {
+  padding: 14px 0;
+}
+
+.right-side {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.welcome {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.welcome img {
+  border-radius: 50%;
 }

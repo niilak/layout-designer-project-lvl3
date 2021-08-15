@@ -23,8 +23,8 @@ html(lang="en")
                         img(src="../images/icons/person.svg", alt="Profile" width="18.75" height="18.75" class="mr-2")
                         span Профиль 
                     .row.h-100vh.white-bg.m-0.pt-3rem.py-1rem.flex-column.flex-nowrap
-                        h2.font-weight-bold  Контакты
-                        input.search.ml5(type="text"  placeholder="Поиск по контактам")
+                        h2.font-weight-bold.mb-4  Контакты
+                        input.search.pl-3(type="text"  placeholder="Поиск по контактам")
                         -
                             var contacts = {
                                 "A": [{
@@ -64,14 +64,16 @@ html(lang="en")
                             }
                         .contact
                             each vrijednosti, slovo in contacts
-                                h1.text-muted.pt-3rem=slovo
+                                h6.text-muted.pt-3rem=slovo
                                 ul
                                 each kontakt in vrijednosti
-                                    li
-                                        img(src=kontakt.avatar)
-                                        div
-                                        a(href="#")=kontakt.name
-                                        span=kontakt.status
+                                    li.contact-li.d-flex.mb-4
+                                        img.avatar(src=kontakt.avatar, alt="Avatar")
+                                        div.pl-1-5rem
+                                            a.contact-name(href="#")=kontakt.name
+                                            p.contact-status.m-0.text-responsive-80=kontakt.status
                 .right-side.col-lg-8.white-bg.m-0.p-0
-
-            
+                    .welcome 
+                        img(src="/images/avatar_1.jpg",  alt="Avatar")
+                        p.contact-name Привет, Кодовёнок
+                        p.contact-status.text-responsive-80 Выбери чат, чтобы начать общаться
