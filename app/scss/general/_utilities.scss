@@ -2,10 +2,6 @@
   border-right: 1px solid $gray;
 }
 
-.h-100vh {
-  height: 100vh;
-}
-
 .gray-bg {
   background: $gray;
 }
@@ -41,4 +37,12 @@
 
 .text-responsive-80 {
   font-size: calc(80% + 1vw + 1vh);
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-calc-72 {
+  height: calc(100% - 72px);
 }
