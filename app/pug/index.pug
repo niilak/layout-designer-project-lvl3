@@ -1,63 +1,10 @@
 doctype html
 html(lang="en")
-    include ./head.pug
+    include xx.pug
     body.gray-bg
         .container.xxl 
             .row.p-4.h-100
                 .col-lg-4.border-right.p-0.h-100
                     include _header.pug
-                    .row.white-bg.m-0.pt-3rem.py-1rem.flex-column.flex-nowrap.h-calc-72
-                        h2.font-weight-bold.mb-4  Контакты
-                        input.search.pl-3(type="text"  placeholder="Поиск по контактам")
-                        -
-                            var contacts = {
-                                "A": [{
-                                name: "Алексей Примадонин",
-                                status: "Онлайн",
-                                avatar: "images/avatar_3.jpg"
-                                }],
-
-                                "В": [{
-                                name: "Вениамин Редакторович",
-                                status: "Онлайн",
-                                avatar: "images/avatar_4.jpg"
-                                }],
-
-                                "Д": [{
-                                name: "Джедай Падаванов",
-                                status: "Был онлайн вчера",
-                                avatar: "images/avatar_2.jpg"
-                                }],
-
-                                "К": [{
-                                name: "Кодовёнок Хекслетович",
-                                status: "Был онлайн 3 часа назад",
-                                avatar: "images/avatar_1.jpg"
-                                },
-                                {
-                                name: "Королева Верстальщина",
-                                status: "Была онлайн вчера",
-                                avatar: "images/avatar_5.jpg"
-                                }],
-
-                                "П": [{
-                                name: "Питонист Джангович",
-                                status: "Был онлайн вчера",
-                                avatar: "images/avatar_6.jpg"
-                                }],
-                            }
-                        .contact
-                            each vrijednosti, slovo in contacts
-                                h6.text-muted.pt-3rem=slovo
-                                ul
-                                each kontakt in vrijednosti
-                                    li.contact-li.d-flex.mb-4
-                                        img.avatar(src=kontakt.avatar, alt="Avatar")
-                                        div.pl-1-5rem
-                                            a.contact-name(href="#")=kontakt.name
-                                            p.contact-status.m-0.text-responsive-80=kontakt.status
-                .right-side.col-lg-8.white-bg.m-0.p-0.h-100
-                    .welcome 
-                        img(src="images/avatar_1.jpg",  alt="Avatar")
-                        p.contact-name Привет, Кодовёнок
-                        p.contact-status.text-responsive-80 Выбери чат, чтобы начать общаться
+                    include _left-side.pug
+                include _right-side.pug
