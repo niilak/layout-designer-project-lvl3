@@ -2,25 +2,21 @@
   background: $primary;
 }
 
-.header {
+.nav {
   margin: 0;
   height: 72px;
   width: 100%;
-  border-radius: 1rem 0 0 0;
+  border-top-left-radius: 1rem;
   font-size: 12.8px;
   padding: 24px;
 }
 
-.gray-bg {
-  background-color: $gray;
+.nav-icons {
+  margin-right: 2px;
 }
 
-@media screen and (max-width: 1600px) {
-  .xxl {
-    max-width: 1600px;
-    // width: 1540px;
-    margin: 0 auto;
-  }
+.gray-bg {
+  background-color: $gray;
 }
 
 body {

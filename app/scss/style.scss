@@ -1,5 +1,8 @@
+@import "general/media.scss";
 @import "general/basic_style";
 @import "general/utilities";
-@import "modules/header-menu";
+@import "modules/left-side";
+@import "modules/right-side";
+@import "modules/nav";
 @import "general/mixin.scss";
 @import "modules/contact.scss";

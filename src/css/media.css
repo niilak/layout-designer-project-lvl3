@@ -1,0 +1,6 @@
+@media screen and (max-width: 1600px) {
+  .xxl {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}

@@ -1,3 +1,27 @@
+@media screen and (max-width: 1600px) {
+  .xxl {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .right-side {
+    display: none;
+  }
+  .left-side {
+    border-bottom-left-radius: 0;
+  }
+  .nav {
+    border-top-left-radius: 0;
+    position: absolute;
+    top: 605px;
+  }
+  .nav-icons span {
+    display: none;
+  }
+}
+
 .border-right {
   border-right: 1px solid #efefef;
 }
@@ -24,11 +48,6 @@
   padding-top: 3rem;
 }
 
-.py-1rem {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pl-1-5rem {
   padding-left: 1.5rem;
 }
@@ -45,32 +64,37 @@
   height: 100%;
 }
 
-.h-calc-72 {
+.left-side {
   height: calc(100% - 72px);
+  border-bottom-left-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.right-side {
+  border-radius: 0 1rem 1rem 0;
+  height: 100%;
 }
 
 .primary {
   background: #4545a5;
 }
 
-.header {
+.nav {
   margin: 0;
   height: 72px;
   width: 100%;
-  border-radius: 1rem 0 0 0;
+  border-top-left-radius: 1rem;
   font-size: 12.8px;
   padding: 24px;
 }
 
-.gray-bg {
-  background-color: #efefef;
+.nav-icons {
+  margin-right: 2px;
 }
 
-@media screen and (max-width: 1600px) {
-  .xxl {
-    max-width: 1600px;
-    margin: 0 auto;
-  }
+.gray-bg {
+  background-color: #efefef;
 }
 
 body {
@@ -134,10 +158,6 @@ h6 {
 
 .search {
   padding: 14px 0;
-}
-
-.right-side {
-  border-radius: 0 1rem 1rem 0;
 }
 
 .welcome {

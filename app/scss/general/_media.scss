@@ -1,0 +1,29 @@
+@media screen and (max-width: 1600px) {
+  .xxl {
+    max-width: 1600px;
+    // width: 1540px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .right-side {
+    display: none;
+  }
+
+  .left-side {
+    border-bottom-left-radius: 0;
+  }
+
+  .nav {
+    border-top-left-radius: 0;
+    position: absolute;
+    top: 605px;
+  }
+
+  .nav-icons {
+    span {
+      display: none;
+    }
+  }
+}
