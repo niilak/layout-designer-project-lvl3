@@ -21,9 +21,15 @@
     top: calc(100% - 72px);
   }
 
+  .logo {
+    margin-right: auto;
+  }
+
   .nav-icons {
-    span {
-      display: none;
-    }
+    margin-right: 3rem;
+  }
+
+  .nav-text {
+    display: none;
   }
 }
