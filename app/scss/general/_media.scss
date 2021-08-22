@@ -18,7 +18,7 @@
   .nav {
     border-top-left-radius: 0;
     position: absolute;
-    top: 605px;
+    top: calc(100% - 72px);
   }
 
   .nav-icons {
