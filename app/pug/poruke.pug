@@ -6,6 +6,26 @@
             ul
                 li.contact-li.d-flex.mb-4
                     img.avatar(src=""images/avatar_4.jpg"" alt="Avatar")
+                    span.time
                     div.pl-1-5rem
                         a.contact-name(href="#")
                         p.contact-status.m-0.text-responsive-80
+    -
+        var messages = {
+            "11:45": [{
+            name: "Вениамин Редакторович",
+            time: "11:45"
+            message: "o_O"
+            avatar: "images/avatar_4.jpg"
+            }],
+
+        }
+    .messages 
+        each value, time in messages
+            h6=name 
+            ul 
+                li 
+                    img.avatar(src=kontakt.avatar, alt="Avatar")
+                    span=time 
+                    div 
+                        
