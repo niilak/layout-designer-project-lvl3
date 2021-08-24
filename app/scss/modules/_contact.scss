@@ -5,7 +5,7 @@
   @include hide-scrollbar;
 }
 
-.contact-li {
+.li-none {
   list-style-type: none;
 }
 
@@ -24,10 +24,6 @@
   color: $secondary;
   font-weight: normal;
   font-size: 12.8px;
-}
-
-h6 {
-  border-top: 1px solid $gray;
 }
 
 .search {

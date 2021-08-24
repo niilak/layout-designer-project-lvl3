@@ -1,31 +1,38 @@
 .left-side.row.white-bg.m-0.pt-3rem.flex-column.flex-nowrap
     h2.font-weight-bold.mb-4 Чаты
     input.search.pl-3(type="text"  placeholder="Поиск по контактам")
-        .messages
-            h6.text-muted.pt-3rem Вениамин Редакторович
-            ul
-                li.contact-li.d-flex.mb-4
-                    img.avatar(src=""images/avatar_4.jpg"" alt="Avatar")
-                    span.time
-                    div.pl-1-5rem
-                        a.contact-name(href="#")
-                        p.contact-status.m-0.text-responsive-80
     -
-        var messages = {
-            "11:45": [{
+        const users = [
+            {
             name: "Вениамин Редакторович",
-            time: "11:45"
-            message: "o_O"
+            time: "11:45",
+            message: "o_O",
             avatar: "images/avatar_4.jpg"
-            }],
+            },
+            {
+            name: "Джедай Падаванов",
+            time: "10:12",
+            message: "Привет, скоро третий проект? Уже скоро надо...",
+            avatar: "images/avatar_2.jpg"
+            }
+        ]
 
-        }
-    .messages 
-        each value, time in messages
-            h6=name 
-            ul 
-                li 
-                    img.avatar(src=kontakt.avatar, alt="Avatar")
-                    span=time 
-                    div 
-                        
+    each user in users   
+        .message.border-t.pt-5
+            ul.pl-3
+            li.li-none.d-flex.mb-4
+                img.avatar(src= user.avatar, alt="Avatar")
+                div.pl-1-5rem
+                    a.contact-name(href="#")= user.name
+                    p.message.text-muted.m-0= user.message
+                span.time.pr-4.text-muted.ml-auto= user.time
+
+    //- .messages.border-t.pt-5
+    //-     ul.pl-3
+    //-     li.li-none.d-flex.mb-4
+    //-         img.avatar(src="images/avatar_4.jpg" alt="Avatar")
+    //-         div.pl-1-5rem
+    //-             a.contact-name(href="#") Вениамин Редакторович
+    //-             p.message.text-muted.m-0 o_O
+    //-         span.time.pr-4.text-muted.ml-auto 11.45
+                    

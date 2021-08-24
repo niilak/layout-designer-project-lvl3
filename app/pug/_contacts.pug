@@ -40,10 +40,10 @@
         }
     .contact
         each vrijednosti, slovo in contacts
-            h6.text-muted.pt-3rem=slovo
+            h6.border-t.text-muted.pt-3rem=slovo
             ul
             each kontakt in vrijednosti
-                li.contact-li.d-flex.mb-4
+                li.li-none.d-flex.mb-4
                     img.avatar(src=kontakt.avatar, alt="Avatar")
                     div.pl-1-5rem
                         a.contact-name(href="#")=kontakt.name
