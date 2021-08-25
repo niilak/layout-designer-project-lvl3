@@ -1,4 +1,4 @@
-stylelint: 
+lint: 
 	npx stylelint ./app/scss/**/*.scss;
 
 sass:

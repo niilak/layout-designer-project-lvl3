@@ -14,18 +14,42 @@
             time: "10:12",
             message: "Привет, скоро третий проект? Уже скоро надо...",
             avatar: "images/avatar_2.jpg"
+            },
+            {
+            name: "Алексей Примадонин",
+            time: "8:53",
+            message: "testy upali...",
+            avatar: "images/avatar_3.jpg"
+            },
+            {
+            name: "Алексей Примадонин",
+            time: "8:53",
+            message: "testy upali...",
+            avatar: "images/avatar_3.jpg"
+            },
+            {
+            name: "Алексей Примадонин",
+            time: "8:53",
+            message: "testy upali...",
+            avatar: "images/avatar_3.jpg"
+            },
+            {
+            name: "Алексей Примадонин",
+            time: "8:53",
+            message: "testy upali...",
+            avatar: "images/avatar_3.jpg"
             }
         ]
-
-    each user in users   
-        .message.border-t.pt-5
-            ul.pl-3
-            li.li-none.d-flex.mb-4
-                img.avatar(src= user.avatar, alt="Avatar")
-                div.pl-1-5rem
-                    a.contact-name(href="#")= user.name
-                    p.message.text-muted.m-0= user.message
-                span.time.pr-4.text-muted.ml-auto= user.time
+    .messages#chats
+        each user in users   
+            .message.border-t.pt-5
+                ul.pl-3
+                li.li-none.d-flex.mb-4
+                    img.avatar(src= user.avatar, alt="Avatar")
+                    div.pl-1-5rem
+                        a.contact-name(href="#")= user.name
+                        p.message.text-muted.font-12-8.text-overflow.m-0= user.message
+                    span.time.pr-4.text-muted.font-12-8.ml-auto= user.time
 
     //- .messages.border-t.pt-5
     //-     ul.pl-3

@@ -16,8 +16,8 @@
 }
 
 .contact-name {
-  font-weight: bold;
   color: black;
+  font-weight: bold;
 }
 
 .contact-status {
@@ -31,13 +31,13 @@
 }
 
 .welcome {
-  margin: 0;
   position: absolute;
   top: 50%;
   width: 100%;
-  transform: translateY(-50%);
   height: fit-content;
+  margin: 0;
   text-align: center;
+  transform: translateY(-50%);
 
   img {
     border-radius: 50%;

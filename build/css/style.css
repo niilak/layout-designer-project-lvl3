@@ -46,6 +46,14 @@
   border-top: 1px solid #efefef;
 }
 
+.text-overflow {
+  text-overflow: ellipsis;
+}
+
+.font-12-8 {
+  font-size: 12.8px;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -53,8 +61,8 @@
 .contact {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 .contact::-webkit-scrollbar {
   display: none;
@@ -71,8 +79,8 @@
 }
 
 .contact-name {
-  font-weight: bold;
   color: black;
+  font-weight: bold;
 }
 
 .contact-status {
@@ -86,13 +94,13 @@
 }
 
 .welcome {
-  margin: 0;
   position: absolute;
   top: 50%;
   width: 100%;
-  transform: translateY(-50%);
   height: fit-content;
+  margin: 0;
   text-align: center;
+  transform: translateY(-50%);
 }
 .welcome img {
   border-radius: 50%;
@@ -100,14 +108,14 @@
 
 .left-side {
   height: calc(100% - 72px);
-  border-bottom-left-radius: 1rem;
-  padding-left: 1rem;
   padding-right: 1rem;
+  padding-left: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .right-side {
-  border-radius: 0 1rem 1rem 0;
   height: 100%;
+  border-radius: 0 1rem 1rem 0;
 }
 
 .primary {
@@ -115,12 +123,12 @@
 }
 
 .nav {
-  margin: 0;
-  height: 72px;
   width: 100%;
-  border-top-left-radius: 1rem;
-  font-size: 12.8px;
+  height: 72px;
+  margin: 0;
   padding: 24px;
+  font-size: 12.8px;
+  border-top-left-radius: 1rem;
 }
 
 .logo {
@@ -154,6 +162,16 @@ body {
   height: 100vh;
 }
 
+.messages {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.messages::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (max-width: 1600px) {
   .xxl {
     max-width: 1600px;
@@ -170,9 +188,9 @@ body {
   }
 
   .nav {
-    border-top-left-radius: 0;
     position: absolute;
     top: calc(100% - 72px);
+    border-top-left-radius: 0;
   }
 
   .logo {
