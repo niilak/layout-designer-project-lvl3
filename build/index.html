@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Layout-design-project-lvl3</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -12,9 +15,21 @@
   <body class="gray-bg">
     <div class="container xxl"> 
       <div class="row p-4 h-100">
-        <div class="col-lg-4 border-right p-0 h-100">
-          <div class="row nav primary light align-center"> <img class="logo" src="images/icons/logo.svg" alt="Hexlet Logo"><a href="#"> <img class="nav-icons" src="images/icons/people.svg" alt="Contact" width="18.8" height="25"><span class="nav-text mr-4">Контакты</span></a><a href="#"> <img class="nav-icons" src="images/icons/chat.svg" alt="Messages" width="25" height="23.3"><span class="nav-text mr-4">Сообщения</span></a><a href="#">    <img class="nav-icons" src="images/icons/person.svg" alt="Profile" width="18.75" height="18.75"><span class="nav-text">Профиль </span></a></div>
-          <div class="left-side row white-bg m-0 pt-3rem flex-column flex-nowrap">
+        <div class="tab-content col-lg-4 border-right p-0 h-100" id="nav-tabContent">
+          <nav>
+            <div class="row nav nav-tabs primary light align-center" id="nav-tab"><img class="logo" src="images/icons/logo.svg" alt="Hexlet Logo"><a class="nav-link active" id="nav-contact-tab" href="#contacts" data-toggle="tab" role="tab" aria-controls="contacts" aria-selected="true"> <img class="nav-icons" src="images/icons/people.svg" alt="Contact" width="18.8" height="25"><span class="nav-text mr-4">Контакты</span></a><a class="nav-link" id="nav-chats-tab" href="#chats" data-toggle="tab" role="tab" aria-controls="chats" aria-selected="false"> <img class="nav-icons" src="images/icons/chat.svg" alt="Messages" width="25" height="23.3"><span class="nav-text mr-4">Сообщения</span></a><a class="nav-link" id="nav-profile-tab" href="#profile" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">    <img class="nav-icons" src="images/icons/person.svg" alt="Profile" width="18.75" height="18.75"><span class="nav-text">Профиль</span></a></div>
+          </nav>
+          <div class="left-side row white-bg m-0 pt-3rem flex-column flex-nowrap tab-pane fade" id="profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <h2 class="font-weight-bold mb-4">Профиль</h2>
+            <input class="search pl-3" type="text" placeholder="Поиск по сообщениям">
+            <div class="profile">
+              <div class="card"><img src="images/avatar_1.jpg" alt="Avatar" height="90" width="90"><a class="contact-name" href="#">Кодовёнок Хекслетович</a>
+                <p class="m-0 text-muted">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
+              </div>
+              <div class="list-group"></div>
+            </div>
+          </div>
+          <div class="left-side row white-bg m-0 pt-3rem flex-column flex-nowrap tab-pane fade" id="chats" role="tabpanel" aria-labelledby="nav-chats-tab">
             <h2 class="font-weight-bold mb-4">Чаты</h2>
             <input class="search pl-3" type="text" placeholder="Поиск по контактам">
             <div class="messages" id="chats">
@@ -23,7 +38,7 @@
                 <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_4.jpg" alt="Avatar">
                   <div class="pl-1-5rem"><a class="contact-name" href="#">Вениамин Редакторович</a>
                     <p class="message text-muted font-12-8 text-overflow m-0">o_O</p>
-                  </div><span class="time pr-4 text-muted font-12-8 ml-auto">11:45</span>
+                  </div><span class="time pr-4 font-12-8 ml-auto">11:45</span>
                 </li>
               </div>
               <div class="message border-t pt-5">
@@ -31,7 +46,7 @@
                 <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_2.jpg" alt="Avatar">
                   <div class="pl-1-5rem"><a class="contact-name" href="#">Джедай Падаванов</a>
                     <p class="message text-muted font-12-8 text-overflow m-0">Привет, скоро третий проект? Уже скоро надо...</p>
-                  </div><span class="time pr-4 text-muted font-12-8 ml-auto">10:12</span>
+                  </div><span class="time pr-4 font-12-8 ml-auto">10:12</span>
                 </li>
               </div>
               <div class="message border-t pt-5">
@@ -39,7 +54,7 @@
                 <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_3.jpg" alt="Avatar">
                   <div class="pl-1-5rem"><a class="contact-name" href="#">Алексей Примадонин</a>
                     <p class="message text-muted font-12-8 text-overflow m-0">testy upali...</p>
-                  </div><span class="time pr-4 text-muted font-12-8 ml-auto">8:53</span>
+                  </div><span class="time pr-4 font-12-8 ml-auto">8:53</span>
                 </li>
               </div>
               <div class="message border-t pt-5">
@@ -47,7 +62,7 @@
                 <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_3.jpg" alt="Avatar">
                   <div class="pl-1-5rem"><a class="contact-name" href="#">Алексей Примадонин</a>
                     <p class="message text-muted font-12-8 text-overflow m-0">testy upali...</p>
-                  </div><span class="time pr-4 text-muted font-12-8 ml-auto">8:53</span>
+                  </div><span class="time pr-4 font-12-8 ml-auto">8:53</span>
                 </li>
               </div>
               <div class="message border-t pt-5">
@@ -55,7 +70,7 @@
                 <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_3.jpg" alt="Avatar">
                   <div class="pl-1-5rem"><a class="contact-name" href="#">Алексей Примадонин</a>
                     <p class="message text-muted font-12-8 text-overflow m-0">testy upali...</p>
-                  </div><span class="time pr-4 text-muted font-12-8 ml-auto">8:53</span>
+                  </div><span class="time pr-4 font-12-8 ml-auto">8:53</span>
                 </li>
               </div>
               <div class="message border-t pt-5">
@@ -63,9 +78,55 @@
                 <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_3.jpg" alt="Avatar">
                   <div class="pl-1-5rem"><a class="contact-name" href="#">Алексей Примадонин</a>
                     <p class="message text-muted font-12-8 text-overflow m-0">testy upali...</p>
-                  </div><span class="time pr-4 text-muted font-12-8 ml-auto">8:53</span>
+                  </div><span class="time pr-4 font-12-8 ml-auto">8:53</span>
                 </li>
               </div>
+            </div>
+          </div>
+          <div class="contact left-side row white-bg m-0 pt-3rem flex-column flex-nowrap tab-pane fade show active" id="contacts" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <h2 class="font-weight-bold mb-4">Контакты</h2>
+            <input class="search pl-3" type="text" placeholder="Поиск по контактам">
+            <div class="contact" id="contacts">
+              <h6 class="border-t text-muted pt-3rem">A</h6>
+              <ul></ul>
+              <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_3.jpg" alt="Avatar">
+                <div class="pl-1-5rem"><a class="contact-name" href="#">Алексей Примадонин</a>
+                  <p class="contact-status m-0 text-responsive-80">Онлайн</p>
+                </div>
+              </li>
+              <h6 class="border-t text-muted pt-3rem">В</h6>
+              <ul></ul>
+              <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_4.jpg" alt="Avatar">
+                <div class="pl-1-5rem"><a class="contact-name" href="#">Вениамин Редакторович</a>
+                  <p class="contact-status m-0 text-responsive-80">Онлайн</p>
+                </div>
+              </li>
+              <h6 class="border-t text-muted pt-3rem">Д</h6>
+              <ul></ul>
+              <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_2.jpg" alt="Avatar">
+                <div class="pl-1-5rem"><a class="contact-name" href="#">Джедай Падаванов</a>
+                  <p class="contact-status m-0 text-responsive-80">Был онлайн вчера</p>
+                </div>
+              </li>
+              <h6 class="border-t text-muted pt-3rem">К</h6>
+              <ul></ul>
+              <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_1.jpg" alt="Avatar">
+                <div class="pl-1-5rem"><a class="contact-name" href="#">Кодовёнок Хекслетович</a>
+                  <p class="contact-status m-0 text-responsive-80">Был онлайн 3 часа назад</p>
+                </div>
+              </li>
+              <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_5.jpg" alt="Avatar">
+                <div class="pl-1-5rem"><a class="contact-name" href="#">Королева Верстальщина</a>
+                  <p class="contact-status m-0 text-responsive-80">Была онлайн вчера</p>
+                </div>
+              </li>
+              <h6 class="border-t text-muted pt-3rem">П</h6>
+              <ul></ul>
+              <li class="li-none d-flex mb-4"><img class="avatar" src="images/avatar_6.jpg" alt="Avatar">
+                <div class="pl-1-5rem"><a class="contact-name" href="#">Питонист Джангович</a>
+                  <p class="contact-status m-0 text-responsive-80">Был онлайн вчера</p>
+                </div>
+              </li>
             </div>
           </div>
         </div>

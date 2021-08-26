@@ -41,3 +41,22 @@ body {
 .container.xxl {
   height: 100vh;
 }
+
+// .nav-link {
+//   ss .active {
+//     color: #495057;
+//     background-color: inherit;
+//     border-color: inherit;
+//     border: none;
+//   }
+// }
+
+.nav-tabs .nav-link.active {
+  background-color: inherit;
+  border-color: inherit;
+  border: none;
+}
+
+.nav-link {
+  padding: 0;
+}
