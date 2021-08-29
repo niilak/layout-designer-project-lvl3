@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/niilak/layout-designer-project-lvl3#readme",
   "dependencies": {
+    "bootstrap": "^5.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.0.0",

@@ -1,9 +1,16 @@
 .left-side.row.white-bg.m-0.pt-3rem.flex-column.flex-nowrap#profile.tab-pane.fade(role="tabpanel" aria-labelledby="nav-profile-tab")
     h2.font-weight-bold.mb-4 Профиль
     input.search.pl-3(type="text" placeholder="Поиск по сообщениям")
-    .profile
-        .card
+    .profile.border-t
+        .profile-card.card.align-center.px-3
             img(src="images/avatar_1.jpg", alt="Avatar" height="90" width="90")
-            a.contact-name(href="#") Кодовёнок Хекслетович
-            p.m-0.text-muted Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
-        .list-group
+            a.contact-name.py-3(href="#") Кодовёнок Хекслетович
+            p.m-0.text-muted.text-center Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+        .list-profile-group
+            ul.list-group
+                li.list-group-item
+                    .list-text
+                        p.text-muted Страна
+                        p Москва, Россия
+                    img(src="images/icons/www.png", alt="www")
+                    
