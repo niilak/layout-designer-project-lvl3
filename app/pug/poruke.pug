@@ -1,6 +1,6 @@
-.left-side.scroll.row.white-bg.m-0.pt-3rem.flex-column.flex-nowrap#chats.tab-pane.fade(role="tabpanel" aria-labelledby="nav-chats-tab")
+#chats.left-side.scroll.row.white-bg.m-0.pt-3rem.flex-column.flex-nowrap.tab-pane.fade(role="tabpanel" aria-labelledby="nav-chats-tab")
     h2.font-weight-bold.mb-4 Чаты
-    input.search.pl-3(type="text"  placeholder="Поиск по контактам")
+    input.form-control.search.pl-3(type="text"  placeholder="Поиск по сообщениям")
     -
         const users = [
             {
@@ -59,4 +59,26 @@
     //-             a.contact-name(href="#") Вениамин Редакторович
     //-             p.message.text-muted.m-0 o_O
     //-         span.time.pr-4.text-muted.ml-auto 11.45
-                    
+    //-     -
+    //-     var users = {
+    //-         "11:45": [{
+    //-         name: "Вениамин Редакторович",
+    //-         message: "o_O",
+    //-         avatar: "images/avatar_4.jpg"
+    //-         }],
+
+    //-         "10:12": [{
+    //-         name: "Джедай Падаванов",
+    //-         message: "Привет, скоро третий проект? Уже скоро надо...",
+    //-         avatar: "images/avatar_2.jpg"
+    //-         }],
+
+    //-         "8:53": [{
+    //-         name: "Алексей Примадонин",
+    //-         "Алексей Примадонин"
+    //-         avatar: "images/avatar_3.jpg"
+    //-         }],
+    //-     }
+    //- .border-t.pt-5#chats
+    //-     each value, time in ussers 
+            
