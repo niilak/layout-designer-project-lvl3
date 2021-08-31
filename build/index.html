@@ -15,14 +15,14 @@
   <body class="gray-bg">
     <div class="container xxl"> 
       <div class="row p-4 h-100">
-        <div class="tab-content col-lg-4 border-right p-0 h-100" id="nav-tabContent">
+        <div class="tab-content col-lg-4 border-r p-0 h-100" id="nav-tabContent">
           <nav>
             <div class="row nav nav-tabs primary light align-center" id="nav-tab"><img class="logo" src="images/icons/logo.svg" alt="Hexlet Logo"><a class="nav-link active" id="nav-contact-tab" href="#contacts" data-toggle="tab" role="tab" aria-controls="contacts" aria-selected="true"> <img class="nav-icons" src="images/icons/people.svg" alt="Contact" width="18.8" height="25"><span class="nav-text mr-4">Контакты</span></a><a class="nav-link" id="nav-chats-tab" href="#chats" data-toggle="tab" role="tab" aria-controls="chats" aria-selected="false"> <img class="nav-icons" src="images/icons/chat.svg" alt="Messages" width="25" height="23.3"><span class="nav-text mr-4">Сообщения</span></a><a class="nav-link" id="nav-profile-tab" href="#profile" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">    <img class="nav-icons" src="images/icons/person.svg" alt="Profile" width="18.75" height="18.75"><span class="nav-text">Профиль</span></a></div>
           </nav>
           <div class="left-side row scroll white-bg m-0 pt-3rem flex-column flex-nowrap tab-pane fade" id="profile" role="tabpanel" aria-labelledby="nav-profile-tab">
             <h2 class="font-weight-bold mb-4">Профиль</h2>
-            <input class="form-control search pl-3" type="text" placeholder="Поиск по сообщениям">
-            <div class="profile border-t">
+            <input class="form-control search mb-3rem p-1-5rem border-b white-bg" type="text" placeholder="Поиск по сообщениям">
+            <div class="profile">
               <div class="profile-card card align-center px-3"><img src="images/avatar_1.jpg" alt="Avatar" height="90" width="90"><a class="contact-name py-3" href="#">Кодовёнок Хекслетович</a>
                 <p class="m-0 text-muted text-center">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
               </div>
@@ -58,8 +58,8 @@
           </div>
           <div class="left-side scroll row white-bg m-0 pt-3rem flex-column flex-nowrap tab-pane fade" id="chats" role="tabpanel" aria-labelledby="nav-chats-tab">
             <h2 class="font-weight-bold mb-4">Чаты</h2>
-            <input class="form-control search pl-3" type="text" placeholder="Поиск по сообщениям">
-            <div class="border-t pt-5" id="chats">
+            <input class="form-control search mb-3rem p-1-5rem border-b white-bg" type="text" placeholder="Поиск по сообщениям">
+            <div id="chats">
               <div class="message shadow-sm">
                 <ul></ul>
                 <li class="li-none d-flex mb-3 py-4"><img class="avatar" src="images/avatar_4.jpg" alt="Avatar">
@@ -112,30 +112,30 @@
           </div>
           <div class="contact left-side scroll row white-bg m-0 pt-3rem flex-column flex-nowrap tab-pane fade show active" id="contacts" role="tabpanel" aria-labelledby="nav-contact-tab">
             <h2 class="font-weight-bold mb-4">Контакты</h2>
-            <input class="form-control search pl-3" type="text" placeholder="Поиск по контактам">
-            <div class="border-t" id="contacts">
-              <h6 class="text-muted pt-3rem">A</h6>
+            <input class="form-control search mb-3rem p-1-5rem border-b white-bg" type="text" placeholder="Поиск по контактам">
+            <div id="contacts">
+              <h6 class="text-muted">A</h6>
               <ul></ul>
               <li class="li-none d-flex mb-4 shadow-sm py-3"><img class="avatar" src="images/avatar_3.jpg" alt="Avatar">
                 <div class="pl-1-5rem"><a class="contact-name" href="#">Алексей Примадонин</a>
                   <p class="contact-status m-0 text-responsive-80">Онлайн</p>
                 </div>
               </li>
-              <h6 class="text-muted pt-3rem">В</h6>
+              <h6 class="text-muted">В</h6>
               <ul></ul>
               <li class="li-none d-flex mb-4 shadow-sm py-3"><img class="avatar" src="images/avatar_4.jpg" alt="Avatar">
                 <div class="pl-1-5rem"><a class="contact-name" href="#">Вениамин Редакторович</a>
                   <p class="contact-status m-0 text-responsive-80">Онлайн</p>
                 </div>
               </li>
-              <h6 class="text-muted pt-3rem">Д</h6>
+              <h6 class="text-muted">Д</h6>
               <ul></ul>
               <li class="li-none d-flex mb-4 shadow-sm py-3"><img class="avatar" src="images/avatar_2.jpg" alt="Avatar">
                 <div class="pl-1-5rem"><a class="contact-name" href="#">Джедай Падаванов</a>
                   <p class="contact-status m-0 text-responsive-80">Был онлайн вчера</p>
                 </div>
               </li>
-              <h6 class="text-muted pt-3rem">К</h6>
+              <h6 class="text-muted">К</h6>
               <ul></ul>
               <li class="li-none d-flex mb-4 shadow-sm py-3"><img class="avatar" src="images/avatar_1.jpg" alt="Avatar">
                 <div class="pl-1-5rem"><a class="contact-name" href="#">Кодовёнок Хекслетович</a>
@@ -147,7 +147,7 @@
                   <p class="contact-status m-0 text-responsive-80">Была онлайн вчера</p>
                 </div>
               </li>
-              <h6 class="text-muted pt-3rem">П</h6>
+              <h6 class="text-muted">П</h6>
               <ul></ul>
               <li class="li-none d-flex mb-4 shadow-sm py-3"><img class="avatar" src="images/avatar_6.jpg" alt="Avatar">
                 <div class="pl-1-5rem"><a class="contact-name" href="#">Питонист Джангович</a>

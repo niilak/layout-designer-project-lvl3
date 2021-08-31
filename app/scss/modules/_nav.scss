@@ -25,31 +25,14 @@
   margin-right: 8px;
 }
 
-.gray-bg {
-  background-color: $gray;
-}
-
 body {
   margin: 0 auto;
   overflow: hidden;
 }
 
-.search {
-  border: none;
-}
-
 .container.xxl {
   height: 100vh;
 }
-
-// .nav-link {
-//   ss .active {
-//     color: #495057;
-//     background-color: inherit;
-//     border-color: inherit;
-//     border: none;
-//   }
-// }
 
 .nav-tabs .nav-link.active {
   background-color: inherit;

@@ -1,25 +1,3 @@
-.border-right {
-  border-right: 1px solid #efefef;
-}
-
-.gray-bg {
-  background: #efefef;
-}
-
-.white-bg {
-  background: white;
-}
-
-.light {
-  color: #fbfbfb;
-}
-
-.align-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .pt-3rem {
   padding-top: 3rem;
 }
@@ -37,20 +15,26 @@
   padding-bottom: 1rem;
 }
 
+.p-1-5rem {
+  padding: 1.5rem;
+}
+
+.mb-3rem {
+  margin-bottom: 3rem;
+}
+
 .text-responsive-80 {
   font-size: calc(80% + 1vw + 1vh);
 }
 
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .h-100 {
   height: 100%;
-}
-
-.border-b {
-  border-bottom: 1px solid #efefef;
-}
-
-.border-t {
-  border-top: 1px solid #efefef;
 }
 
 .text-overflow {
@@ -70,6 +54,30 @@
 
 .scroll::-webkit-scrollbar {
   display: none;
+}
+
+.border-r {
+  border-right: 1px solid #efefef;
+}
+
+.border-b {
+  border-bottom: 1px solid #efefef;
+}
+
+.border-t {
+  border-top: 1px solid #efefef;
+}
+
+.gray-bg {
+  background: #efefef;
+}
+
+.white-bg {
+  background: white;
+}
+
+.light {
+  color: #fbfbfb;
 }
 
 .contact {
@@ -107,28 +115,6 @@ ul {
   font-size: 12.8px;
 }
 
-.search {
-  padding: 14px 0;
-  width: 100%;
-}
-
-.welcome {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 0;
-  text-align: center;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.welcome img {
-  border-radius: 50%;
-}
-
 .left-side {
   height: calc(100% - 72px);
   padding-right: 1rem;
@@ -149,9 +135,34 @@ ul {
           align-items: center;
 }
 
+.search {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: initial;
+}
+
 .right-side {
   height: 100%;
   border-radius: 0 1rem 1rem 0;
+}
+
+.welcome {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.welcome img {
+  border-radius: 50%;
 }
 
 .primary {
@@ -181,17 +192,9 @@ ul {
   margin-right: 8px;
 }
 
-.gray-bg {
-  background-color: #efefef;
-}
-
 body {
   margin: 0 auto;
   overflow: hidden;
-}
-
-.search {
-  border: none;
 }
 
 .container.xxl {
