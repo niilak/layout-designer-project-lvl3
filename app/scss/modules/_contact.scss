@@ -1,8 +1,10 @@
 .contact {
   display: flex;
   flex-direction: column;
-  // border-top: 1px solid $gray;
-  @include hide-scrollbar;
+}
+
+ul {
+  margin: 0;
 }
 
 .li-none {

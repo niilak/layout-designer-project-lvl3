@@ -1,4 +1,4 @@
-.left-side.row.white-bg.m-0.pt-3rem.flex-column.flex-nowrap#profile.tab-pane.fade(role="tabpanel" aria-labelledby="nav-profile-tab")
+.left-side.row.scroll.white-bg.m-0.pt-3rem.flex-column.flex-nowrap#profile.tab-pane.fade(role="tabpanel" aria-labelledby="nav-profile-tab")
     h2.font-weight-bold.mb-4 Профиль
     input.search.pl-3(type="text" placeholder="Поиск по сообщениям")
     .profile.border-t
@@ -10,7 +10,22 @@
             ul.list-group
                 li.list-group-item
                     .list-text
-                        p.text-muted Страна
-                        p Москва, Россия
-                    img(src="images/icons/www.png", alt="www")
+                        p.m-0.text-muted Страна
+                        p.m-0 Москва, Россия
+                    img(src="images/icons/www.png", alt="www" weight="16" height="16")
+                li.list-group-item
+                    .list-text
+                        p.m-0.text-muted Телефон
+                        p.m-0 +7 (499) 123-45-67
+                    img(src="images/icons/phone.png", alt="Phone" weight="16" height="16")
+                li.list-group-item
+                    .list-text
+                        p.m-0.text-muted Email
+                        p.m-0 nikita.m@hexlet.io
+                    img(src="images/icons/email.png", alt="Phone" weight="16" height="16")
+                li.list-group-item
+                    .list-text
+                        p.m-0.text-muted Twitter
+                        p.m-0 @n__mikhaylov
+                    img(src="images/icons/peoples.png", alt="Phone" weight="16" height="12")
                     

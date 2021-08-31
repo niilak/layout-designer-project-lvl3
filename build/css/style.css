@@ -61,6 +61,17 @@
   font-size: 12.8px;
 }
 
+.scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,15 +82,8 @@
           flex-direction: column;
 }
 
-.contact {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.contact::-webkit-scrollbar {
-  display: none;
+ul {
+  margin: 0;
 }
 
 .li-none {
@@ -130,6 +134,19 @@
   padding-right: 1rem;
   padding-left: 1rem;
   border-bottom-left-radius: 1rem;
+}
+
+.list-group-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .right-side {
@@ -191,17 +208,6 @@ body {
   padding: 0;
 }
 
-.messages {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.messages::-webkit-scrollbar {
-  display: none;
-}
-
 .profile {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -221,6 +227,16 @@ body {
 
 .profile-card img {
   border-radius: 50%;
+}
+
+.list-group-item {
+  font-size: 12.8px;
+}
+
+.list-group-item {
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 @media screen and (max-width: 1600px) {

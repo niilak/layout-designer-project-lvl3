@@ -1,4 +1,4 @@
-.left-side.row.white-bg.m-0.pt-3rem.flex-column.flex-nowrap#chats.tab-pane.fade(role="tabpanel" aria-labelledby="nav-chats-tab")
+.left-side.scroll.row.white-bg.m-0.pt-3rem.flex-column.flex-nowrap#chats.tab-pane.fade(role="tabpanel" aria-labelledby="nav-chats-tab")
     h2.font-weight-bold.mb-4 Чаты
     input.search.pl-3(type="text"  placeholder="Поиск по контактам")
     -
@@ -40,18 +40,18 @@
             avatar: "images/avatar_3.jpg"
             }
         ]
-    .messages#chats
+    .border-t.pt-5#chats
         each user in users   
-            .message.border-t.pt-5
-                ul.pl-3
-                li.li-none.d-flex.mb-4
+            .message.shadow-sm
+                ul
+                li.li-none.d-flex.mb-3.py-4
                     img.avatar(src= user.avatar, alt="Avatar")
                     div.pl-1-5rem
                         a.contact-name(href="#")= user.name
                         p.message.text-muted.font-12-8.text-overflow.m-0= user.message
                     span.time.pr-4.font-12-8.ml-auto= user.time
 
-    //- .messages.border-t.pt-5
+    //-.border-t.pt-5
     //-     ul.pl-3
     //-     li.li-none.d-flex.mb-4
     //-         img.avatar(src="images/avatar_4.jpg" alt="Avatar")
