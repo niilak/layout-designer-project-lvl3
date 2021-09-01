@@ -1,6 +1,9 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "general/basic_style";
 @import "general/mixin.scss";
-@import "general/utilities";
+@import "utilities/utilities.scss";
+@import "utilities/border";
+@import "utilities/border-radius";
 @import "modules/contact.scss";
 @import "modules/left-side";
 @import "modules/right-side";

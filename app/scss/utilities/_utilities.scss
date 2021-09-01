@@ -48,45 +48,19 @@
   @include hide-scrollbar;
 }
 
-// borders
-.border-r {
-  border-right: 1px solid $gray;
-}
-
-.border-b {
-  border-bottom: 1px solid $gray;
-}
-
-.border-t {
-  border-top: 1px solid $gray;
-}
-
-.radius-left-bottom {
-  border-bottom-left-radius: 1rem;
-}
-
-.radius-left-top {
-  border-top-left-radius: 1rem;
-}
-
-.radius-right {
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-
 // colors
-.gray-bg {
-  background: $gray;
-}
+// .gray-bg {
+//   background: $gray;
+// }
 
-.white-bg {
-  background: white;
-}
+// .white-bg {
+//   background: white;
+// }
 
-.light {
-  color: $light;
-}
+// .light {
+//   color: $light;
+// }
 
-.primary-bg {
-  background: $primary;
-}
+// .primary-bg {
+//   background: $primary;
+// }

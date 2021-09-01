@@ -1,11 +1,26 @@
-$gray: #efefef;
-$primary: #4545a5;
-$secondary: #6c757d;
-$success: #28a745;
-$info: #17a2b8;
-$warning: #ffc107;
-$danger: #dc3545;
-$light: #fbfbfb;
-$dark: #343a40;
+$theme-colors: (
+  gray: #efefef,
+  primary: #4545a5,
+  secondary: #6c757d,
+  success: #28a745,
+  info: #17a2b8,
+  warning: #ffc107,
+  danger: #dc3545,
+  light: #fbfbfb,
+  dark: #343a40,
+  white: #fff
+);
+
+@each $theme-color, $color in $theme-colors {
+  .#{$theme-color}-bg {
+    background-color: $color;
+  }
+
+  .#{$theme-color} {
+    color: $color;
+  }
+}
+
+
 
 $enable-shadows: true !default;
