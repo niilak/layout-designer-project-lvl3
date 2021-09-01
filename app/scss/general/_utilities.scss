@@ -61,6 +61,19 @@
   border-top: 1px solid $gray;
 }
 
+.radius-left-bottom {
+  border-bottom-left-radius: 1rem;
+}
+
+.radius-left-top {
+  border-top-left-radius: 1rem;
+}
+
+.radius-right {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
 // colors
 .gray-bg {
   background: $gray;
@@ -72,4 +85,8 @@
 
 .light {
   color: $light;
+}
+
+.primary-bg {
+  background: $primary;
 }
