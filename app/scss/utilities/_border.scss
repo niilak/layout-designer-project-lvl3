@@ -1,12 +1,26 @@
-// borders
-.border-r {
-    border-right: 1px solid gray;
+$borders: (
+  right: 1px solid gray,
+  left: 1px solid gray,
+  bottom: 1px solid gray,
+  top: 1px solid gray,
+);
+
+
+@each $border, $value in $borders {
+  .border-sm-#{$border} {
+    border-#{$border}: $value!important;
   }
-  
-  .border-b {
-    border-bottom: 1px solid gray;
+
+  .border-md-#{$border} {
+    border-#{$border}: $value!important;
   }
-  
-  .border-t {
-    border-top: 1px solid gray;
+
+  .border-lg-#{$border} {
+    border-#{$border}: $value!important;
   }
+
+}
+
+.border {
+  border: 1px solid gray;
+}

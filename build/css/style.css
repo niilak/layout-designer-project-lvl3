@@ -12088,16 +12088,56 @@ fieldset:disabled .btn {
   display: none;
 }
 
-.border-r {
-  border-right: 1px solid gray;
+.border-sm-right {
+  border-right: 1px solid gray !important;
 }
 
-.border-b {
-  border-bottom: 1px solid gray;
+.border-md-right {
+  border-right: 1px solid gray !important;
 }
 
-.border-t {
-  border-top: 1px solid gray;
+.border-lg-right {
+  border-right: 1px solid gray !important;
+}
+
+.border-sm-left {
+  border-left: 1px solid gray !important;
+}
+
+.border-md-left {
+  border-left: 1px solid gray !important;
+}
+
+.border-lg-left {
+  border-left: 1px solid gray !important;
+}
+
+.border-sm-bottom {
+  border-bottom: 1px solid gray !important;
+}
+
+.border-md-bottom {
+  border-bottom: 1px solid gray !important;
+}
+
+.border-lg-bottom {
+  border-bottom: 1px solid gray !important;
+}
+
+.border-sm-top {
+  border-top: 1px solid gray !important;
+}
+
+.border-md-top {
+  border-top: 1px solid gray !important;
+}
+
+.border-lg-top {
+  border-top: 1px solid gray !important;
+}
+
+.border {
+  border: 1px solid gray;
 }
 
 .radius-left-bottom {
