@@ -12180,6 +12180,7 @@ ul {
 .contact-name {
   color: black;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .contact-status {

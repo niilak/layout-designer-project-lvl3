@@ -27,7 +27,6 @@
   font-size: calc(80% + 1vw + 1vh);
 }
 
-// layout
 .align-center {
   align-items: center;
 }
@@ -48,19 +47,3 @@
   @include hide-scrollbar;
 }
 
-// colors
-// .gray-bg {
-//   background: $gray;
-// }
-
-// .white-bg {
-//   background: white;
-// }
-
-// .light {
-//   color: $light;
-// }
-
-// .primary-bg {
-//   background: $primary;
-// }
