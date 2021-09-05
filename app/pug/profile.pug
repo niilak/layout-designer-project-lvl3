@@ -1,6 +1,8 @@
 #profile.left-side.row.scroll.white-bg.m-0.pt-3rem.flex-column.flex-nowrap.tab-pane.fade(role="tabpanel" aria-labelledby="nav-profile-tab")
-    h2.font-weight-bold.mb-4 Профиль
-    input.form-control.search.mb-3rem.p-1-5rem.border-b.white-bg(type="text" placeholder="Поиск по сообщениям")
+    include h2
+    include search.pug
+    +h2("Профиль")
+    +search("Поиск по сообщениям")
     .profile
         .profile-card.card.align-center.px-3
             img(src="images/avatar_1.jpg", alt="Avatar" height="90" width="90")

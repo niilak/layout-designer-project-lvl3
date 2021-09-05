@@ -18,7 +18,7 @@
   .nav {
     position: absolute;
     top: calc(100% - 72px);
-    border-top-left-radius: 0;
+    border-top-left-radius: 0 !important;
   }
 
   .logo {
@@ -31,5 +31,11 @@
 
   .nav-text {
     display: none;
+  }
+
+  .container {
+    .p-4 {
+      padding: 0 !important;
+    }
   }
 }

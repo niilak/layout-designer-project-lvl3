@@ -1,12 +1,26 @@
 $radius: (
-  radius-left-top: 1rem,
-  radius-right-top: 1rem,
-  radius-top-right: 1rem,
-  radius-bottom-right: 1rem,
+  top-left-radius: 1rem,
+  top-right-radius: 1rem,
+  bottom-right-radius: 1rem,
+  bottom-left-radius: 1rem,
 );
 
 @each $border-radius, $value in $radius {
-  .#{$radius} {
-    border-#{$radius}: $value !important;
+  .#{$border-radius} {
+    border-#{$border-radius}: $value !important;
   }
+}
+
+.radius {
+  border-radius: 1rem;
+}
+
+.radius-left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.radius-right {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
