@@ -1,12 +1,12 @@
 doctype html
 html(lang="en")
-    include _headd
+    include base.pug
     body.gray-bg
         .container.xxl 
             .row.p-4.h-100
                 .tab-content.col-lg-4.border-r.p-0.h-100#nav-tabContent
-                    include _nav.pug
+                    include nav.pug
                     include profile.pug
-                    include poruke.pug
-                    include _contacts.pug
-                include _right-side.pug
+                    include messages.pug
+                    include contacts.pug
+                include chat.pug
