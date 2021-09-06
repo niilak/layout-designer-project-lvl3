@@ -1,8 +1,8 @@
 $borders: (
-  right: 1px solid gray,
-  left: 1px solid gray,
-  bottom: 1px solid gray,
-  top: 1px solid gray,
+  right: 1px solid #efefef,
+  left: 1px solid #efefef,
+  bottom: 1px solid #efefef,
+  top: 1px solid #efefef,
 );
 
 
@@ -22,5 +22,5 @@ $borders: (
 }
 
 .border {
-  border: 1px solid gray;
+  border: 1px solid #efefef;
 }
