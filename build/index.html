@@ -19,7 +19,7 @@
           <nav>
             <div class="nav nav-tabs primary-bg light align-center top-left-radius" id="nav-tab"> <img class="logo" src="images/icons/logo.svg" alt="Hexlet Logo"><a class="nav-link active" id="nav-contact-tab" href="#contacts" data-toggle="tab" role="tab" aria-controls="contacts" aria-selected="true"> <img class="nav-icons" src="images/icons/people.svg" alt="Contact" width="18.8" height="25"><span class="nav-text mr-4">Контакты</span></a><a class="nav-link" id="nav-chats-tab" href="#chats" data-toggle="tab" role="tab" aria-controls="chats" aria-selected="false"> <img class="nav-icons" src="images/icons/chat.svg" alt="Messages" width="25" height="23.3"><span class="nav-text mr-4">Сообщения</span></a><a class="nav-link" id="nav-profile-tab" href="#profile" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">    <img class="nav-icons" src="images/icons/person.svg" alt="Profile" width="18.75" height="18.75"><span class="nav-text">Профиль</span></a></div>
           </nav>
-          <div class="left-side row scroll white-bg m-0 pt-3rem flex-column flex-nowrap border-sm-right tab-pane fade" id="profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <div class="left-side row hide-scroll white-bg m-0 pt-3rem flex-column flex-nowrap border-sm-right tab-pane fade" id="profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         <h2 class="mb-4 font-weight-bold">Профиль</h2>
                         <form class="mb-5" action="#"> 
                           <input class="form-control search p-1-5rem border-sm-bottom white-bg" type="text" placeholder="Поиск по сообщениям">
@@ -58,7 +58,7 @@
               </div>
             </div>
           </div>
-          <div class="left-side scroll row white-bg m-0 pt-3rem flex-column flex-nowrap tab-pane fade border-sm-right" id="chats" role="tabpanel" aria-labelledby="nav-chats-tab">
+          <div class="left-side hide-scroll row white-bg m-0 pt-3rem flex-column flex-nowrap tab-pane fade border-sm-right" id="chats" role="tabpanel" aria-labelledby="nav-chats-tab">
                         <h2 class="mb-4 font-weight-bold">Профиль</h2>
                         <form class="mb-5" action="#"> 
                           <input class="form-control search p-1-5rem border-sm-bottom white-bg" type="text" placeholder="Поиск по сообщениям">
@@ -114,7 +114,7 @@
               </div>
             </div>
           </div>
-          <div class="contact left-side scroll row white-bg m-0 pt-3rem border-sm-right flex-column flex-nowrap tab-pane fade show active" id="contacts" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <div class="contact left-side hide-scroll row white-bg m-0 pt-3rem border-sm-right flex-column flex-nowrap tab-pane fade show active" id="contacts" role="tabpanel" aria-labelledby="nav-contact-tab">
                         <h2 class="mb-4 font-weight-bold">Контакты</h2>
                         <form class="mb-5" action="#"> 
                           <input class="form-control search p-1-5rem border-sm-bottom white-bg" type="text" placeholder="Поиск по контактам">
@@ -164,11 +164,9 @@
           </div>
         </div>
         <div class="right-side col-lg-8 white-bg m-0 p-0 radius-right">
-          <div class="chat-head d-flex padding-y-20 pl-3 border-sm-bottom"><img class="avatar" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
-            <div class="pl-1-5rem">
-              <p class="contact-name m-0">Вениамин Редакторович</p>
-              <p class="contact-status m-0 text-responsive-80">Онлайн</p>
-            </div>
+          <div class="welcome"><img class="pb-1rem" src="images/avatar_1.jpg" alt="Avatar">
+            <p class="m-0 contact-name">Привет, Кодовёнок</p>
+            <p class="m-0 contact-status text-responsive-80">Выбери чат, чтобы начать общаться</p>
           </div>
         </div>
       </div>

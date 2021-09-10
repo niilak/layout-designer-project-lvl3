@@ -5,22 +5,28 @@ $borders: (
   top: 1px solid #efefef,
 );
 
-
 @each $border, $value in $borders {
   .border-sm-#{$border} {
-    border-#{$border}: $value!important;
+    border-#{$border}: $value !important;
   }
 
   .border-md-#{$border} {
-    border-#{$border}: $value!important;
+    border-#{$border}: $value !important;
   }
 
   .border-lg-#{$border} {
-    border-#{$border}: $value!important;
+    border-#{$border}: $value !important;
   }
-
 }
 
 .border {
   border: 1px solid #efefef;
+}
+
+.border-b-secondary {
+  border-bottom: 1px solid #6c757d;
+}
+
+.border-b-white {
+  border-bottom: 1px solid #fff;
 }

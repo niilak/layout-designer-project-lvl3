@@ -1,3 +1,13 @@
-.right-side.col-lg-8.white-bg.m-0.p-0.radius-right
-    //- include welcome.pug
-    include my-chat.pug
+doctype html
+html(lang="en")
+    include base.pug
+    body.gray-bg
+        .container.xxl 
+            .row.p-4.h-100
+                #nav-tabContent.tab-content.col-lg-4.border-r.p-0.h-100
+                    include nav.pug
+                    include profile.pug
+                    include messages.pug
+                    include contacts.pug
+                .right-side.col-lg-8.white-bg.m-0.p-0.radius-right.overflow-hidden
+                    include my-chat.pug

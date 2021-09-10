@@ -12070,6 +12070,10 @@ fieldset:disabled .btn {
           align-items: center;
 }
 
+.max-w-570 {
+  max-width: 570px;
+}
+
 .text-overflow {
   text-overflow: ellipsis;
 }
@@ -12078,14 +12082,18 @@ fieldset:disabled .btn {
   font-size: 12.8px;
 }
 
-.scroll {
+.font-16 {
+  font-size: 16px;
+}
+
+.hide-scroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-.scroll::-webkit-scrollbar {
+.hide-scroll::-webkit-scrollbar {
   display: none;
 }
 
@@ -12139,6 +12147,14 @@ fieldset:disabled .btn {
 
 .border {
   border: 1px solid #efefef;
+}
+
+.border-b-secondary {
+  border-bottom: 1px solid #6c757d;
+}
+
+.border-b-white {
+  border-bottom: 1px solid #fff;
 }
 
 .top-left-radius {
@@ -12254,6 +12270,37 @@ ul {
 
 .welcome img {
   border-radius: 50%;
+}
+
+.send {
+  padding: 13px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.message-form {
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 50px;
+}
+
+.message-form input {
+  padding: 34px 24px;
+  width: 100%;
+  border: none;
 }
 
 .nav {
