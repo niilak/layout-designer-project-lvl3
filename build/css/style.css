@@ -12253,6 +12253,14 @@ ul {
 
 .right-side {
   height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .welcome {
@@ -12294,7 +12302,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 50px;
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
 .message-form input {
@@ -12396,6 +12405,9 @@ body {
   }
   .logo {
     margin-right: auto;
+  }
+  nav .nav-tabs {
+    border-bottom: none;
   }
   .nav-icons {
     margin-right: 3rem;

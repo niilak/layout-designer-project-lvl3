@@ -1,5 +1,8 @@
 .right-side {
   height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .welcome {
@@ -31,7 +34,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 50px;
+  // margin: 0 50px;
+  margin-left: 48px;
+  margin-right: 48px;
 
   input {
     padding: 34px 24px;

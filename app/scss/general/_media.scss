@@ -25,6 +25,12 @@
     margin-right: auto;
   }
 
+  nav {
+    .nav-tabs {
+      border-bottom: none;
+    }
+  }
+
   .nav-icons {
     margin-right: 3rem;
   }
