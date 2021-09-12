@@ -11,8 +11,26 @@
     display: none;
   }
 
+  .dialog-message {
+    .avatar {
+      display: none;
+    }
+  }
+
+  .left-chat {
+    padding: 0;
+  }
+
+  .message-form {
+    margin: 0;
+  }
+
   .left-side {
     border-bottom-left-radius: 0;
+  }
+
+  .chat-icon {
+    display: block;
   }
 
   .nav {
@@ -40,7 +58,7 @@
   }
 
   .container {
-    .p-4 {
+    .row {
       padding: 0 !important;
     }
   }

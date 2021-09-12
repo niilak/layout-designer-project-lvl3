@@ -17,7 +17,7 @@
       <div class="row p-4 h-100">
         <div class="tab-content col-lg-4 border-r p-0 h-100" id="nav-tabContent">
           <nav>
-            <div class="nav nav-tabs primary-bg light align-center top-left-radius" id="nav-tab"> <img class="logo" src="images/icons/logo.svg" alt="Hexlet Logo"><a class="nav-link active" id="nav-contact-tab" href="#contacts" data-toggle="tab" role="tab" aria-controls="contacts" aria-selected="true"> <img class="nav-icons" src="images/icons/people.svg" alt="Contact" width="18.8" height="25"><span class="nav-text mr-4">Контакты</span></a><a class="nav-link" id="nav-chats-tab" href="#chats" data-toggle="tab" role="tab" aria-controls="chats" aria-selected="false"> <img class="nav-icons" src="images/icons/chat.svg" alt="Messages" width="25" height="23.3"><span class="nav-text mr-4">Сообщения</span></a><a class="nav-link" id="nav-profile-tab" href="#profile" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">    <img class="nav-icons" src="images/icons/person.svg" alt="Profile" width="18.75" height="18.75"><span class="nav-text">Профиль</span></a></div>
+            <div class="nav nav-tabs primary-bg light align-center top-left-radius" id="nav-tab"> <img class="logo" src="images/icons/logo.svg" alt="Hexlet Logo"><a class="nav-link chat-icon" id="nav-dialog-tab" href="#test" data-toggle="tab" role="tab" aria-controls="test" aria-selected="false"><img class="nav-icons" src="images/icons/chat-icon.png" alt="Current Chat" width="25" height="25"></a><a class="nav-link active" id="nav-contact-tab" href="#contacts" data-toggle="tab" role="tab" aria-controls="contacts" aria-selected="true"> <img class="nav-icons" src="images/icons/people.svg" alt="Contact" width="18.8" height="25"><span class="nav-text mr-4">Контакты</span></a><a class="nav-link" id="nav-chats-tab" href="#chats" data-toggle="tab" role="tab" aria-controls="chats" aria-selected="false"> <img class="nav-icons" src="images/icons/chat.svg" alt="Messages" width="25" height="23.3"><span class="nav-text mr-4">Сообщения</span></a><a class="nav-link" id="nav-profile-tab" href="#profile" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">    <img class="nav-icons" src="images/icons/person.svg" alt="Profile" width="18.75" height="18.75"><span class="nav-text">Профиль</span></a></div>
           </nav>
           <div class="left-side row hide-scroll white-bg m-0 pt-3rem flex-column flex-nowrap border-sm-right tab-pane fade" id="profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         <h2 class="mb-4 font-weight-bold">Профиль</h2>
@@ -162,6 +162,50 @@
               </li>
             </div>
           </div>
+          <div class="left-chat left-side row hide-scroll white-bg m-0 pt-3rem flex-column flex-nowrap border-sm-right tab-pane fade" id="test" role="tabpanel" aria-labelledby="#nav-dialog-tab">
+            <div class="chat-head d-flex padding-y-20 pl-3 border-sm-bottom"><img class="avatar" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
+              <div class="pl-1-5rem">
+                <p class="contact-name m-0 pb-1">Вениамин Редакторович</p>
+                <p class="contact-status m-0 text-responsive-80">Онлайн</p>
+              </div>
+            </div>
+            <div class="p-5 hide-scroll overflow-scroll" id="current-chat" style="height:100%" role="tabpanel" aria-labelledby="nav-dialog-tab">
+              <div class="dialog-message"><img class="avatar mr-3" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
+                <div class="shadow-sm radius light-bg p-4 max-w-570"><a class="contact-name pb-1">Вениамин Редакторович</a>
+                  <p class="font-16 border-lg-bottom m-0 pb-2">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?</p>
+                  <p class="contact-status m-0 text-responsive-80">8 минут назад</p>
+                </div>
+              </div>
+              <div class="dialog-message justify-content-end"><img class="avatar mr-3" src="images/avatar_1.jpg" alt="Вениамин Редакторович">
+                <div class="shadow-sm radius primary-bg p-4 max-w-570 white">
+                  <p class="font-16 border-b-white m-0 pb-2">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</p>
+                  <p class="m-0 font-12-8 white">5 минут назад</p>
+                </div>
+              </div>
+              <div class="dialog-message"><img class="avatar mr-3" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
+                <div class="shadow-sm radius light-bg p-4 max-w-570"><a class="contact-name pb-1">Вениамин Редакторович</a>
+                  <p class="font-16 border-lg-bottom m-0 pb-2">Лады</p>
+                  <p class="contact-status m-0 text-responsive-80">5 минут назад</p>
+                </div>
+              </div>
+              <div class="dialog-message justify-content-end"><img class="avatar mr-3" src="images/avatar_1.jpg" alt="Вениамин Редакторович">
+                <div class="shadow-sm radius primary-bg p-4 max-w-570 white">
+                  <p class="font-16 border-b-white m-0 pb-2">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</p>
+                  <p class="m-0 font-12-8 white">3 минут назад</p>
+                </div>
+              </div>
+              <div class="dialog-message"><img class="avatar mr-3" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
+                <div class="shadow-sm radius light-bg p-4 max-w-570"><a class="contact-name pb-1">Вениамин Редакторович</a>
+                  <p class="font-16 border-lg-bottom m-0 pb-2">о_О</p>
+                  <p class="contact-status m-0 text-responsive-80">Только что</p>
+                </div>
+              </div>
+            </div>
+            <form class="message-form border-lg-top" action="#"> 
+              <input type="text" placeholder="Напишите сообщение...">
+              <button class="send primary-bg"><img src="images/icons/send.png" alt="Send Icon" width="24" height="24"></button>
+            </form>
+          </div>
         </div>
         <div class="right-side col-lg-8 white-bg m-0 p-0 radius-right overflow-hidden">
           <div class="chat-head d-flex padding-y-20 pl-3 border-sm-bottom"><img class="avatar" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
@@ -170,32 +214,32 @@
               <p class="contact-status m-0 text-responsive-80">Онлайн</p>
             </div>
           </div>
-          <div class="p-5 hide-scroll overflow-scroll" style="height:100%">
-            <div class="d-flex pb-1rem align-items-end"><img class="avatar mr-3" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
+          <div class="p-5 hide-scroll overflow-scroll" id="current-chat" style="height:100%" role="tabpanel" aria-labelledby="nav-dialog-tab">
+            <div class="dialog-message"><img class="avatar mr-3" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
               <div class="shadow-sm radius light-bg p-4 max-w-570"><a class="contact-name pb-1">Вениамин Редакторович</a>
                 <p class="font-16 border-lg-bottom m-0 pb-2">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?</p>
                 <p class="contact-status m-0 text-responsive-80">8 минут назад</p>
               </div>
             </div>
-            <div class="d-flex pb-1rem justify-content-end align-items-end"><img class="avatar mr-3" src="images/avatar_1.jpg" alt="Вениамин Редакторович">
+            <div class="dialog-message justify-content-end"><img class="avatar mr-3" src="images/avatar_1.jpg" alt="Вениамин Редакторович">
               <div class="shadow-sm radius primary-bg p-4 max-w-570 white">
                 <p class="font-16 border-b-white m-0 pb-2">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</p>
                 <p class="m-0 font-12-8 white">5 минут назад</p>
               </div>
             </div>
-            <div class="d-flex pb-1rem align-items-end"><img class="avatar mr-3" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
+            <div class="dialog-message"><img class="avatar mr-3" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
               <div class="shadow-sm radius light-bg p-4 max-w-570"><a class="contact-name pb-1">Вениамин Редакторович</a>
                 <p class="font-16 border-lg-bottom m-0 pb-2">Лады</p>
                 <p class="contact-status m-0 text-responsive-80">5 минут назад</p>
               </div>
             </div>
-            <div class="d-flex pb-1rem justify-content-end align-items-end"><img class="avatar mr-3" src="images/avatar_1.jpg" alt="Вениамин Редакторович">
+            <div class="dialog-message justify-content-end"><img class="avatar mr-3" src="images/avatar_1.jpg" alt="Вениамин Редакторович">
               <div class="shadow-sm radius primary-bg p-4 max-w-570 white">
                 <p class="font-16 border-b-white m-0 pb-2">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</p>
                 <p class="m-0 font-12-8 white">3 минут назад</p>
               </div>
             </div>
-            <div class="d-flex pb-1rem align-items-end"><img class="avatar mr-3" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
+            <div class="dialog-message"><img class="avatar mr-3" src="images/avatar_4.jpg" alt="Вениамин Редакторович">
               <div class="shadow-sm radius light-bg p-4 max-w-570"><a class="contact-name pb-1">Вениамин Редакторович</a>
                 <p class="font-16 border-lg-bottom m-0 pb-2">о_О</p>
                 <p class="contact-status m-0 text-responsive-80">Только что</p>

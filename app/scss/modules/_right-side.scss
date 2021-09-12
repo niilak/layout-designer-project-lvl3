@@ -5,6 +5,12 @@
   flex-direction: column;
 }
 
+.dialog-message {
+  display: flex;
+  padding-bottom: 1rem;
+  align-items: end;
+}
+
 .welcome {
   position: absolute;
   top: 50%;

@@ -12251,6 +12251,10 @@ ul {
   border-radius: initial;
 }
 
+.chat-icon {
+  display: none;
+}
+
 .right-side {
   height: 100%;
   position: relative;
@@ -12261,6 +12265,16 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.dialog-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .welcome {
@@ -12395,8 +12409,20 @@ body {
   .right-side {
     display: none;
   }
+  .dialog-message .avatar {
+    display: none;
+  }
+  .left-chat {
+    padding: 0;
+  }
+  .message-form {
+    margin: 0;
+  }
   .left-side {
     border-bottom-left-radius: 0;
+  }
+  .chat-icon {
+    display: block;
   }
   .nav {
     position: absolute;
@@ -12415,7 +12441,7 @@ body {
   .nav-text {
     display: none;
   }
-  .container .p-4 {
+  .container .row {
     padding: 0 !important;
   }
 }
