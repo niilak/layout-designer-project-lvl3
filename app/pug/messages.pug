@@ -23,28 +23,10 @@
             message: "testy upali...",
             avatar: "images/avatar_3.jpg"
             },
-            {
-            name: "Алексей Примадонин",
-            time: "8:53",
-            message: "testy upali...",
-            avatar: "images/avatar_3.jpg"
-            },
-            {
-            name: "Алексей Примадонин",
-            time: "8:53",
-            message: "testy upali...",
-            avatar: "images/avatar_3.jpg"
-            },
-            {
-            name: "Алексей Примадонин",
-            time: "8:53",
-            message: "testy upali...",
-            avatar: "images/avatar_3.jpg"
-            }
         ]
     #chats
         each user in users   
-            .message.shadow-sm
+            .shadow-sm.pointer.hover-purple.pl-3
                 ul
                 li.li-none.d-flex.mb-3.py-4
                     img.avatar(src= user.avatar, alt="Avatar")
@@ -52,35 +34,3 @@
                         a.contact-name(href="#")= user.name
                         p.message.text-muted.font-12-8.text-overflow.m-0= user.message
                     span.time.pr-4.font-12-8.ml-auto= user.time
-
-    //-.border-t.pt-5
-    //-     ul.pl-3
-    //-     li.li-none.d-flex.mb-4
-    //-         img.avatar(src="images/avatar_4.jpg" alt="Avatar")
-    //-         div.pl-1-5rem
-    //-             a.contact-name(href="#") Вениамин Редакторович
-    //-             p.message.text-muted.m-0 o_O
-    //-         span.time.pr-4.text-muted.ml-auto 11.45
-    //-     -
-    //-     var users = {
-    //-         "11:45": [{
-    //-         name: "Вениамин Редакторович",
-    //-         message: "o_O",
-    //-         avatar: "images/avatar_4.jpg"
-    //-         }],
-
-    //-         "10:12": [{
-    //-         name: "Джедай Падаванов",
-    //-         message: "Привет, скоро третий проект? Уже скоро надо...",
-    //-         avatar: "images/avatar_2.jpg"
-    //-         }],
-
-    //-         "8:53": [{
-    //-         name: "Алексей Примадонин",
-    //-         "Алексей Примадонин"
-    //-         avatar: "images/avatar_3.jpg"
-    //-         }],
-    //-     }
-    //- .border-t.pt-5#chats
-    //-     each value, time in ussers 
-            

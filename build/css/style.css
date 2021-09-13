@@ -12255,6 +12255,20 @@ ul {
   display: none;
 }
 
+.hover-purple:hover {
+  background-color: #4545a5;
+}
+
+.hover-purple:hover .contact-name,
+.hover-purple:hover .contact-status,
+.hover-purple:hover .message {
+  color: #fff !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 .right-side {
   height: 100%;
   position: relative;
@@ -12405,7 +12419,35 @@ body {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .logo {
+    margin-right: auto;
+  }
+  .nav-text {
+    display: none;
+  }
+  .nav-icons {
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .right-side {
+    display: none !important;
+  }
+  nav .nav-tabs {
+    border-top-right-radius: 1rem;
+  }
+  .contact {
+    border-bottom-right-radius: 1rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  h2, .h2 {
+    margin-top: 48px !important;
+    padding-left: 24px;
+  }
   .right-side {
     display: none;
   }
@@ -12434,6 +12476,7 @@ body {
   }
   nav .nav-tabs {
     border-bottom: none;
+    border-radius: 0;
   }
   .nav-icons {
     margin-right: 3rem;

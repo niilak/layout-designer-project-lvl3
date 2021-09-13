@@ -23,3 +23,17 @@
 .chat-icon {
   display: none;
 }
+
+.hover-purple:hover {
+  background-color: #4545a5;
+
+  .contact-name,
+  .contact-status,
+  .message {
+    color: #fff !important;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
