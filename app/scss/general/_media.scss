@@ -4,6 +4,13 @@
     // width: 1540px;
     margin: 0 auto;
   }
+
+  .left-chat {
+    div,
+    form {
+      display: none !important;
+    }
+  }
 }
 
 @media screen and (max-width: 1400px) {

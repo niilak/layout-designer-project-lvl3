@@ -12417,6 +12417,10 @@ body {
     max-width: 1600px;
     margin: 0 auto;
   }
+  .left-chat div,
+  .left-chat form {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 1400px) {
