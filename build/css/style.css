@@ -12417,6 +12417,9 @@ body {
     max-width: 1600px;
     margin: 0 auto;
   }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1600px) {
   .left-chat div,
   .left-chat form {
     display: none !important;

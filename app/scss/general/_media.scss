@@ -4,7 +4,9 @@
     // width: 1540px;
     margin: 0 auto;
   }
+}
 
+@media screen and (min-width: 991px) and (max-width: 1600px) {
   .left-chat {
     div,
     form {
