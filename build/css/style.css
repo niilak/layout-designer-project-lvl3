@@ -12382,17 +12382,6 @@ body {
   padding: 0;
 }
 
-.profile {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.profile::-webkit-scrollbar {
-  display: none;
-}
-
 .profile-card {
   padding-top: 83px;
   padding-bottom: 119px;
@@ -12445,6 +12434,7 @@ body {
   }
   nav .nav-tabs {
     border-top-right-radius: 1rem;
+    padding-right: 0;
   }
   .contact {
     border-bottom-right-radius: 1rem;

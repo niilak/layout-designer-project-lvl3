@@ -1,14 +1,17 @@
 doctype html
+-var page = "chat"
 html(lang="en")
     include base.pug
     body.gray-bg
         .container.xxl 
             .row.p-4.h-100
+                - var id = "current-chat-left"
                 #nav-tabContent.tab-content.col-lg-4.border-r.p-0.h-100
                     include nav-chat.pug
                     include profile.pug
                     include messages.pug
                     include contacts.pug
-                    include test.pug
+                    include left-chat.pug
+                - var id = "current-chat"
                 .right-side.col-lg-8.white-bg.m-0.p-0.radius-right.overflow-hidden
                     include my-chat.pug
