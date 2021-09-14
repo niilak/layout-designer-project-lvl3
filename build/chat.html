@@ -17,7 +17,7 @@
       <div class="row p-4 h-100">
         <div class="tab-content col-lg-4 border-r p-0 h-100" id="nav-tabContent">
           <nav>
-            <div class="nav nav-tabs primary-bg light align-center top-left-radius" id="nav-tab"> <img class="logo" src="images/icons/logo.svg" alt="Hexlet Logo"><a class="nav-link chat-icon" id="nav-dialog-tab" href="#test" data-toggle="tab" role="tab" aria-controls="test" aria-selected="false"><img class="nav-icons" src="images/icons/chat-icon.png" alt="Current Chat" width="25" height="25"></a><a class="nav-link active" id="nav-contact-tab" href="#contacts" data-toggle="tab" role="tab" aria-controls="contacts" aria-selected="true"> <img class="nav-icons" src="images/icons/people.svg" alt="Contact" width="18.8" height="25"><span class="nav-text mr-4">Контакты</span></a><a class="nav-link" id="nav-chats-tab" href="#chats" data-toggle="tab" role="tab" aria-controls="chats" aria-selected="false"> <img class="nav-icons" src="images/icons/chat.svg" alt="Messages" width="25" height="23.3"><span class="nav-text mr-4">Сообщения</span></a><a class="nav-link" id="nav-profile-tab" href="#profile" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">    <img class="nav-icons" src="images/icons/person.svg" alt="Profile" width="18.75" height="18.75"><span class="nav-text">Профиль</span></a></div>
+            <div class="nav nav-tabs primary-bg light align-center top-left-radius" id="nav-tab" role="tablist"><img class="logo" src="images/icons/logo.svg" alt="Hexlet Logo"><a class="nav-link chat-icon" id="nav-dialog-tab" href="#test" data-toggle="tab" role="tab" aria-controls="test" aria-selected="false"><img class="nav-icons" src="images/icons/chat-icon.png" alt="Current Chat" width="25" height="25"></a><a class="nav-link active" id="nav-contact-tab" href="#contacts" data-toggle="tab" role="tab" aria-controls="contacts" aria-selected="true"> <img class="nav-icons" src="images/icons/people.svg" alt="Contact" width="19" height="25"><span class="nav-text mr-4">Контакты</span></a><a class="nav-link" id="nav-chats-tab" href="#chats" data-toggle="tab" role="tab" aria-controls="chats" aria-selected="false"> <img class="nav-icons" src="images/icons/chat.svg" alt="Messages" width="25" height="23"><span class="nav-text mr-4">Сообщения</span></a><a class="nav-link" id="nav-profile-tab" href="#profile" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">    <img class="nav-icons" src="images/icons/person.svg" alt="Profile" width="19" height="19"><span class="nav-text">Профиль</span></a></div>
           </nav>
           <div class="left-side row hide-scroll white-bg m-0 pt-3rem flex-column flex-nowrap border-sm-right tab-pane fade" id="profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         <h2 class="mb-4 font-weight-bold">Профиль</h2>
@@ -34,59 +34,62 @@
                     <div class="list-text">
                       <p class="m-0 text-muted">Страна</p>
                       <p class="m-0">Москва, Россия</p>
-                    </div><img src="images/icons/www.png" alt="www" weight="16" height="16">
+                    </div><img src="images/icons/www.png" alt="www" width="16" height="16">
                   </li>
                   <li class="list-group-item">
                     <div class="list-text">
                       <p class="m-0 text-muted">Телефон</p>
                       <p class="m-0">+7 (499) 123-45-67</p>
-                    </div><img src="images/icons/phone.png" alt="Phone" weight="16" height="16">
+                    </div><img src="images/icons/phone.png" alt="Phone" width="16" height="16">
                   </li>
                   <li class="list-group-item">
                     <div class="list-text">
                       <p class="m-0 text-muted">Email</p>
                       <p class="m-0">nikita.m@hexlet.io</p>
-                    </div><img src="images/icons/email.png" alt="Phone" weight="16" height="12">
+                    </div><img src="images/icons/email.png" alt="Phone" width="16" height="12">
                   </li>
                   <li class="list-group-item">
                     <div class="list-text">
                       <p class="m-0 text-muted">Twitter</p>
                       <p class="m-0">@n__mikhaylov</p>
-                    </div><img src="images/icons/peoples.png" alt="Phone" weight="16" height="12">
+                    </div><img src="images/icons/peoples.png" alt="Phone" width="16" height="12">
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="left-side hide-scroll row white-bg m-0 pt-3rem flex-column flex-nowrap tab-pane fade border-sm-right" id="chats" role="tabpanel" aria-labelledby="nav-chats-tab">
-                        <h2 class="mb-4 font-weight-bold">Профиль</h2>
+                        <h2 class="mb-4 font-weight-bold">Чаты</h2>
                         <form class="mb-5" action="#"> 
                           <input class="form-control search p-1-5rem border-sm-bottom white-bg" type="text" placeholder="Поиск по сообщениям">
                         </form>
-            <div id="chats">
+            <div>
               <div class="shadow-sm pointer hover-purple pl-3">
-                <ul></ul>
-                <li class="li-none d-flex mb-3 py-4"><img class="avatar" src="images/avatar_4.jpg" alt="Avatar">
-                  <div class="pl-1-5rem"><a class="contact-name" href="#">Вениамин Редакторович</a>
-                    <p class="message text-muted font-12-8 text-overflow m-0">o_O</p>
-                  </div><span class="time pr-4 font-12-8 ml-auto">11:45</span>
-                </li>
+                <ul>
+                  <li class="li-none d-flex mb-3 py-4"><img class="avatar" src="images/avatar_4.jpg" alt="Avatar">
+                    <div class="pl-1-5rem"><a class="contact-name" href="#">Вениамин Редакторович</a>
+                      <p class="message text-muted font-12-8 text-overflow m-0">o_O</p>
+                    </div><span class="time pr-4 font-12-8 ml-auto">11:45</span>
+                  </li>
+                </ul>
               </div>
               <div class="shadow-sm pointer hover-purple pl-3">
-                <ul></ul>
-                <li class="li-none d-flex mb-3 py-4"><img class="avatar" src="images/avatar_2.jpg" alt="Avatar">
-                  <div class="pl-1-5rem"><a class="contact-name" href="#">Джедай Падаванов</a>
-                    <p class="message text-muted font-12-8 text-overflow m-0">Привет, скоро третий проект? Уже скоро надо...</p>
-                  </div><span class="time pr-4 font-12-8 ml-auto">10:12</span>
-                </li>
+                <ul>
+                  <li class="li-none d-flex mb-3 py-4"><img class="avatar" src="images/avatar_2.jpg" alt="Avatar">
+                    <div class="pl-1-5rem"><a class="contact-name" href="#">Джедай Падаванов</a>
+                      <p class="message text-muted font-12-8 text-overflow m-0">Привет, скоро третий проект? Уже скоро надо...</p>
+                    </div><span class="time pr-4 font-12-8 ml-auto">10:12</span>
+                  </li>
+                </ul>
               </div>
               <div class="shadow-sm pointer hover-purple pl-3">
-                <ul></ul>
-                <li class="li-none d-flex mb-3 py-4"><img class="avatar" src="images/avatar_3.jpg" alt="Avatar">
-                  <div class="pl-1-5rem"><a class="contact-name" href="#">Алексей Примадонин</a>
-                    <p class="message text-muted font-12-8 text-overflow m-0">testy upali...</p>
-                  </div><span class="time pr-4 font-12-8 ml-auto">8:53</span>
-                </li>
+                <ul>
+                  <li class="li-none d-flex mb-3 py-4"><img class="avatar" src="images/avatar_3.jpg" alt="Avatar">
+                    <div class="pl-1-5rem"><a class="contact-name" href="#">Алексей Примадонин</a>
+                      <p class="message text-muted font-12-8 text-overflow m-0">testy upali...</p>
+                    </div><span class="time pr-4 font-12-8 ml-auto">8:53</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -95,7 +98,7 @@
                         <form class="mb-5" action="#"> 
                           <input class="form-control search p-1-5rem border-sm-bottom white-bg" type="text" placeholder="Поиск по контактам">
                         </form>
-            <div id="contacts">
+            <div>
               <h6 class="text-muted">A</h6>
               <ul>
                 <li class="li-none d-flex mb-4 shadow-sm py-3 pointer hover-purple pl-3"><img class="avatar" src="images/avatar_3.jpg" alt="Avatar">

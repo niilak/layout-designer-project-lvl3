@@ -1,7 +1,7 @@
 #chats.left-side.hide-scroll.row.white-bg.m-0.pt-3rem.flex-column.flex-nowrap.tab-pane.fade.border-sm-right(role="tabpanel" aria-labelledby="nav-chats-tab")
     include h2
     include search.pug
-    +h2("Профиль")
+    +h2("Чаты")
     +search("Поиск по сообщениям")
     -
         const users = [
@@ -24,13 +24,13 @@
             avatar: "images/avatar_3.jpg"
             },
         ]
-    #chats
+    div
         each user in users   
             .shadow-sm.pointer.hover-purple.pl-3
                 ul
-                li.li-none.d-flex.mb-3.py-4
-                    img.avatar(src= user.avatar, alt="Avatar")
-                    div.pl-1-5rem
-                        a.contact-name(href="#")= user.name
-                        p.message.text-muted.font-12-8.text-overflow.m-0= user.message
-                    span.time.pr-4.font-12-8.ml-auto= user.time
+                    li.li-none.d-flex.mb-3.py-4
+                        img.avatar(src= user.avatar, alt="Avatar")
+                        div.pl-1-5rem
+                            a.contact-name(href="#")= user.name
+                            p.message.text-muted.font-12-8.text-overflow.m-0= user.message
+                        span.time.pr-4.font-12-8.ml-auto= user.time
