@@ -12424,7 +12424,10 @@ body {
     display: none;
   }
   .nav-icons {
-    margin-right: 3rem;
+    margin-right: 40px;
+  }
+  .nav-link:last-child .nav-icons {
+    margin-right: 0;
   }
 }
 
@@ -12434,7 +12437,6 @@ body {
   }
   nav .nav-tabs {
     border-top-right-radius: 1rem;
-    padding-right: 0;
   }
   .contact {
     border-bottom-right-radius: 1rem;
@@ -12475,9 +12477,6 @@ body {
   nav .nav-tabs {
     border-bottom: none;
     border-radius: 0;
-  }
-  .nav-icons {
-    margin-right: 3rem;
   }
   .nav-text {
     display: none;

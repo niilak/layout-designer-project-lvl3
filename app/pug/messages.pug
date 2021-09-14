@@ -1,39 +1,36 @@
-if page == "index"
-    div(class="left-side hide-scroll row white-bg m-0 pt-3rem flex-column flex-nowrap tab-pane fade border-sm-right" id="#chats" role="tabpanel" aria-labelledby="nav-chats-tab")
-else 
-    div(class="left-side hide-scroll row white-bg m-0 pt-3rem flex-column flex-nowrap tab-pane fade show active border-sm-right" id="#chats" role="tabpanel" aria-labelledby="nav-chats-tab")
-        include h2
-        include search.pug
-        +h2("Чаты")
-        +search("Поиск по сообщениям")
-        -
-            const users = [
-                {
-                name: "Вениамин Редакторович",
-                time: "11:45",
-                message: "o_O",
-                avatar: "images/avatar_4.jpg"
-                },
-                {
-                name: "Джедай Падаванов",
-                time: "10:12",
-                message: "Привет, скоро третий проект? Уже скоро надо...",
-                avatar: "images/avatar_2.jpg"
-                },
-                {
-                name: "Алексей Примадонин",
-                time: "8:53",
-                message: "Тесты упали >_<",
-                avatar: "images/avatar_3.jpg"
-                },
-            ]
-        div
-            each user in users   
-                .shadow-sm.pointer.hover-purple.pl-3
-                    ul
-                        li.li-none.d-flex.mb-3.py-4
-                            img.avatar(src= user.avatar, alt="Avatar")
-                            div.pl-1-5rem
-                                a.contact-name(href="#")= user.name
-                                p.message.text-muted.font-12-8.text-overflow.m-0= user.message
-                            span.time.pr-4.font-12-8.ml-auto= user.time
+.left-side.hide-scroll.row.white-bg.m-0.pt-3rem.flex-column.flex-nowrap.tab-pane.fade.border-sm-right(class=(page == "chat") ? "show active" : "" id="chats" role="tabpanel" aria-labelledby="nav-chats-tab")
+    include h2
+    include search.pug
+    +h2("Чаты")
+    +search("Поиск по сообщениям")
+    -
+        const users = [
+            {
+            name: "Вениамин Редакторович",
+            time: "11:45",
+            message: "o_O",
+            avatar: "images/avatar_4.jpg"
+            },
+            {
+            name: "Джедай Падаванов",
+            time: "10:12",
+            message: "Привет, скоро третий проект? Уже скоро надо...",
+            avatar: "images/avatar_2.jpg"
+            },
+            {
+            name: "Алексей Примадонин",
+            time: "8:53",
+            message: "Тесты упали >_<",
+            avatar: "images/avatar_3.jpg"
+            },
+        ]
+    div
+        each user in users   
+            .shadow-sm.pointer.hover-purple.pl-3
+                ul
+                    li.li-none.d-flex.mb-3.py-4
+                        img.avatar(src= user.avatar, alt="Avatar")
+                        div.pl-1-5rem
+                            a.contact-name(href="#")= user.name
+                            p.message.text-muted.font-12-8.text-overflow.m-0= user.message
+                        span.time.pr-4.font-12-8.ml-auto= user.time
