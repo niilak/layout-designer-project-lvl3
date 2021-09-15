@@ -12270,6 +12270,15 @@ ul {
   cursor: pointer;
 }
 
+.time {
+  color: #6c757d;
+  margin-left: auto;
+}
+
+h2, .h2 {
+  font-size: 32px !important;
+}
+
 .right-side {
   height: 100%;
   position: relative;
