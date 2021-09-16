@@ -12056,6 +12056,10 @@ fieldset:disabled .btn {
   padding: 1.5rem;
 }
 
+.pt5 {
+  padding-top: 5px;
+}
+
 .mb-19 {
   margin-bottom: 19px;
 }
@@ -12078,8 +12082,8 @@ fieldset:disabled .btn {
           align-items: center;
 }
 
-.max-w-570 {
-  max-width: 570px;
+.max-w-558 {
+  max-width: 558px;
 }
 
 .text-overflow {
@@ -12218,6 +12222,7 @@ ul {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  vertical-align: none;
 }
 
 .contact-name {
@@ -12237,6 +12242,10 @@ ul {
   padding-right: 12px;
   padding-left: 12px;
   border-bottom-left-radius: 1rem;
+}
+
+.row .tab-content {
+  max-width: 464px;
 }
 
 .list-group-item {
@@ -12281,6 +12290,7 @@ ul {
 .time {
   color: #6c757d;
   margin-left: auto;
+  margin-right: 40px;
 }
 
 h2, .h2 {

@@ -25,12 +25,12 @@
             },
         ]
     div
-        each user in users   
-            .shadow-sm.pointer.hover-purple
-                ul
-                    li.li-none.d-flex.mb-3.py-20.pl-3
-                        img.avatar(src= user.avatar, alt="Avatar")
-                        div.pl-1-5rem
+        ul
+            each user in users   
+                li.li-none.d-flex.mb-3.py-20.pl-3.shadow-sm.pointer.hover-purple
+                    img.avatar(src= user.avatar, alt="Avatar")
+                    div.pl-1-5rem.w-100
+                        div.w-100.d-flex
                             a.contact-name(href="#")= user.name
-                            p.message.text-muted.font-12-8.text-overflow.m-0= user.message
-                        span.time.pr-4.font-12-8= user.time
+                            span.time.font-12-8= user.time
+                        p.message.text-muted.font-12-8.text-overflow.m-0= user.message
