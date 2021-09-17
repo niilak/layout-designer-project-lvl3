@@ -12487,6 +12487,7 @@ body {
   }
   form {
     padding-left: 24px;
+    padding-right: 24px;
   }
   .dialog-message .avatar {
     display: none;
