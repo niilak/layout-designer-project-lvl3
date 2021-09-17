@@ -56,11 +56,25 @@
 @media screen and (max-width: 800px) {
   h2 {
     margin-top: 48px !important;
+    padding-left: 24px !important;
+  }
+
+  .left-side {
+    border-bottom-left-radius: 0;
+    border-right: none !important;
+  }
+
+  .content {
+    padding-right: 24px;
     padding-left: 24px;
   }
 
   .right-side {
     display: none;
+  }
+
+  form {
+    padding-left: 24px;
   }
 
   .dialog-message {
@@ -75,10 +89,6 @@
 
   .message-form {
     margin: 0;
-  }
-
-  .left-side {
-    border-bottom-left-radius: 0;
   }
 
   .chat-icon {
@@ -101,10 +111,6 @@
       border-radius: 0;
     }
   }
-
-  // .nav-icons {
-  //   margin-right: 40px;
-  // }
 
   .nav-text {
     display: none;

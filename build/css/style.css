@@ -12472,10 +12472,21 @@ body {
 @media screen and (max-width: 800px) {
   h2, .h2 {
     margin-top: 48px !important;
+    padding-left: 24px !important;
+  }
+  .left-side {
+    border-bottom-left-radius: 0;
+    border-right: none !important;
+  }
+  .content {
+    padding-right: 24px;
     padding-left: 24px;
   }
   .right-side {
     display: none;
+  }
+  form {
+    padding-left: 24px;
   }
   .dialog-message .avatar {
     display: none;
@@ -12485,9 +12496,6 @@ body {
   }
   .message-form {
     margin: 0;
-  }
-  .left-side {
-    border-bottom-left-radius: 0;
   }
   .chat-icon {
     display: block;
