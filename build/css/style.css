@@ -12221,8 +12221,8 @@ ul {
 .avatar {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   vertical-align: none;
+  border-radius: 50%;
 }
 
 .contact-name {
@@ -12252,20 +12252,20 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 .search {
   width: 100%;
   border-top: none;
-  border-left: none;
   border-right: none;
+  border-left: none;
   border-radius: initial;
 }
 
@@ -12288,9 +12288,9 @@ ul {
 }
 
 .time {
-  color: #6c757d;
-  margin-left: auto;
   margin-right: 40px;
+  margin-left: auto;
+  color: #6c757d;
 }
 
 h2, .h2 {
@@ -12298,7 +12298,6 @@ h2, .h2 {
 }
 
 .right-side {
-  height: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12307,16 +12306,17 @@ h2, .h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 .dialog-message {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 1rem;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
+  padding-bottom: 1rem;
 }
 
 .welcome {
@@ -12337,49 +12337,49 @@ h2, .h2 {
 }
 
 .send {
-  padding: 13px;
-  border: none;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
+  border: none;
+  border-radius: 50%;
 }
 
 .message-form {
-  background: white;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 48px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 87px;
   margin-right: 48px;
+  margin-left: 48px;
+  background: white;
 }
 
 .message-form input {
-  padding: 34px 24px;
   width: 100%;
+  padding: 34px 24px;
   border: none;
 }
 
 .nav {
-  width: 100%;
-  height: 72px;
-  margin: 0;
-  font-size: 12.8px;
-  padding-left: 22px;
-  padding-right: 32px;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  height: 72px;
+  margin: 0;
+  padding-right: 32px;
+  padding-left: 22px;
+  font-size: 12.8px;
 }
 
 .logo {
@@ -12407,8 +12407,8 @@ body {
 
 .nav-tabs .nav-link.active {
   background-color: inherit;
-  border-color: inherit;
   border: none;
+  border-color: inherit;
 }
 
 .nav-link {
@@ -12427,12 +12427,9 @@ body {
 
 .list-group-item {
   font-size: 12.8px;
-}
-
-.list-group-item {
   border-top: none;
-  border-left: none;
   border-right: none;
+  border-left: none;
 }
 
 @media screen and (max-width: 1600px) {
