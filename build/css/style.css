@@ -12293,6 +12293,10 @@ h2, .h2 {
   font-size: 32px !important;
 }
 
+.search-form {
+  margin-bottom: 83px;
+}
+
 .right-side {
   position: relative;
   display: -webkit-box;
@@ -12485,9 +12489,10 @@ body {
   .right-side {
     display: none;
   }
-  form {
-    padding-left: 24px;
-    padding-right: 24px;
+  .search-form {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    margin-bottom: 0 !important;
   }
   .dialog-message .avatar {
     display: none;

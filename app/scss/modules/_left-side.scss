@@ -5,12 +5,6 @@
   border-bottom-left-radius: 1rem;
 }
 
-// .row {
-//   .tab-content {
-//     max-width: 464px;
-//   }
-// }
-
 .list-group-item {
   display: flex;
   align-items: center;
@@ -52,4 +46,8 @@
 
 h2 {
   font-size: 32px !important;
+}
+
+.search-form {
+  margin-bottom: 83px;
 }
