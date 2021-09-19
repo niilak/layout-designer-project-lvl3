@@ -12244,19 +12244,6 @@ ul {
   border-bottom-left-radius: 1rem;
 }
 
-.list-group-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
 .search {
   width: 100%;
   border-top: none;
@@ -12426,6 +12413,18 @@ body {
 }
 
 .list-group-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 10px;
   font-size: 12.8px;
   border-top: none;
   border-right: none;
@@ -12501,6 +12500,9 @@ body {
   }
   .message-form {
     margin: 0;
+  }
+  .profile-card {
+    padding-top: 36px;
   }
   .chat-icon {
     display: block;

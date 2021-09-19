@@ -9,6 +9,12 @@
 }
 
 .list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 10px;
   font-size: 12.8px;
   border-top: none;
   border-right: none;
