@@ -60,8 +60,8 @@
   }
 
   .left-side {
-    border-bottom-left-radius: 0;
     border-right: none !important;
+    border-bottom-left-radius: 0;
   }
 
   .content {
@@ -74,14 +74,15 @@
   }
 
   .search-form {
-    padding-left: 24px !important;
     padding-right: 24px !important;
+    padding-left: 24px !important;
   }
 
   .message-form {
     height: 72px;
-    padding-bottom: 24px;
+    margin: 0;
     padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .send {
@@ -97,10 +98,6 @@
 
   .left-chat {
     padding: 0;
-  }
-
-  .message-form {
-    margin: 0;
   }
 
   .profile-card {
