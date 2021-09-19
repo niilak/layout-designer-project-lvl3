@@ -12294,7 +12294,7 @@ h2, .h2 {
 }
 
 .search-form {
-  margin-bottom: 83px;
+  margin-bottom: 48px;
 }
 
 .right-side {
@@ -12492,7 +12492,6 @@ body {
   .search-form {
     padding-left: 24px !important;
     padding-right: 24px !important;
-    margin-bottom: 0 !important;
   }
   .dialog-message .avatar {
     display: none;
