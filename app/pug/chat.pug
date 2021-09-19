@@ -5,13 +5,12 @@ html(lang="en")
     body.gray-bg
         .container.xxl 
             .row.p-4.h-100
-                - var id = "current-chat-left"
+                - var id = "current-chat"
                 #nav-tabContent.tab-content.col-lg-4.border-r.p-0.h-100
                     include nav-chat.pug
                     include profile.pug
                     include messages.pug
                     include contacts.pug
                     include left-chat.pug
-                - var id = "current-chat"
                 .right-side.col-lg-8.white-bg.m-0.p-0.radius-right.overflow-hidden
                     include my-chat.pug
